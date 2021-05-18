@@ -43,7 +43,7 @@ const isI18nStaging = process.env.I18N_STAGING === 'true';
 
 const isVersioningDisabled = !!process.env.DISABLE_VERSIONING || isI18nStaging;
 
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
+/** @type {import('@docusaurus/core/lib').DocusaurusConfig} */
 (module.exports = {
   title: 'Docusaurus',
   tagline: 'Build optimized websites quickly, focus on your content',
