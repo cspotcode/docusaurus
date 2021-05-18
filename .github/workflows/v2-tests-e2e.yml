@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - ab/module-resolution
   pull_request:
     branches:
       - master
