@@ -143,6 +143,8 @@ export function createBaseConfig(
         '@site': siteDir,
         '@generated': generatedFilesDir,
 
+        'core-js': require.resolve('core-js'),
+
         // Note: a @docusaurus alias would also catch @docusaurus/theme-common,
         // so we use fine-grained aliases instead
         // '@docusaurus': path.resolve(__dirname, '../client/exports'),
@@ -153,7 +155,6 @@ export function createBaseConfig(
       // Example: if there is core-js@3 in user's own node_modules, but core depends on
       // core-js@2, we should use core-js@2.
       modules: [
-        path.resolve(__dirname, '..', '..', 'node_modules'),
         'node_modules',
         path.resolve(fs.realpathSync(process.cwd()), 'node_modules'),
       ],

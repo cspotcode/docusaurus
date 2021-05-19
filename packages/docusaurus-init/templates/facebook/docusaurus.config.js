@@ -7,7 +7,7 @@
  * @format
  */
 
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
+/** @type {import('@docusaurus/core/lib').DocusaurusConfig} */
 module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
